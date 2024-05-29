@@ -6,9 +6,9 @@ Hi! I am currently a full-time teacher (docent-4) at the University of Amsterdam
 
 ## Updates
 
--- Started this website :)
--- Our paper _Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? Ask the DUST!_ has been accepted to the ACL Findings!
--- I gave a talk for the [Dutch AI Ethics Community](https://www.linkedin.com/company/daiec/)
+- Started this website :)
+- Our paper _Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? Ask the DUST!_ has been accepted to the ACL Findings!
+- I gave a talk for the [Dutch AI Ethics Community](https://www.linkedin.com/company/daiec/)
 
 ## Contact
 For now, the best way to contact me is by sending me a message on [LinkedIn](https://nl.linkedin.com/in/frank-wildenburg-925838161) or, for uni-related topics, an email through my [employee account](https://www.uva.nl/profiel/w/i/f.c.l.wildenburg/f.c.l.wildenburg.html).
