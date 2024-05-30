@@ -37,8 +37,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['import pandas as pd', 'import plotly.express as px', 'import datetime', '', 'from urllib.request import urlopen']
+['import pandas as pd', 'import plotly.express as px', 'import datetime', '', 'df = pd.read_csv("bio.csv")']
 ...
-["                                 'lon':False},", '                    mapbox_style="carto-positron")', "fig.update_traces(hovertemplate='<b>%{hovertext}</b><br>Began: %{customdata[2]} <br>Until: %{customdata[3]}') #", "fig.update_layout(showlegend=False, margin={'t':0,'l':0,'b':0,'r':0})", 'fig.update_geos(fitbounds="locations")']
+['                    mapbox_style="carto-positron")', "fig.update_traces(hovertemplate='<b>%{hovertext}</b><br>Began: %{customdata[2]} <br>Until: %{customdata[3]}')", "fig.update_layout(showlegend=False, margin={'t':0,'l':0,'b':0,'r':0})", 'fig.update_geos(fitbounds="locations")', 'fig.show()']
 -------------------
 
