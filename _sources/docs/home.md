@@ -1,8 +1,8 @@
 # Frank Wildenburg
 
-(Last updated: August 5, 2024)
+(Last updated: May 29, 2024)
 
-Hi! I am currently a full-time teacher (docent-4) at the University of Amsterdam, where I teach in the bachelor of artificial intelligence. Before starting this job, I was a student at the [Master of Logic](https://msclogic.illc.uva.nl), an interdisciplinary research master at the Institute for Logic, Language and Computation. During these two years, I focused on artificial intelligence and philosophy of exact sciences. Before that, I did my bachelor's degree in artificial intelligence at Utrecht University. Besides teaching at the UvA, I recently worked on [a paper based on my MSc thesis](https://arxiv.org/abs/2402.12486).
+Hi! I am currently a full-time teacher (docent-4) at the University of Amsterdam, where I teach in the bachelor of artificial intelligence. Before starting this job, I was a student at the [Master of Logic](https://msclogic.illc.uva.nl), an interdisciplinary research master at the Institute for Logic, Language and Computation. During these two years, I focused on artificial intelligence and philosophy of exact sciences. Before that, I did my bachelor's degree in artificial intelligence at Utrecht University. Besides teaching at the UvA, I am currently working on [a paper based on my MSc thesis](https://arxiv.org/abs/2402.12486).
 
 ## Updates
 
