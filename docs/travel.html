@@ -425,14 +425,181 @@ document.write(`
 <p>(Of course, I still travel outside of these guidelines as well. Occasionally this leads to another world heritage site, and these are also included in the below map)</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.1.0 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with &#39;pybind11&gt;=2.12&#39;.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to &#39;numpy&lt;2&#39; or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\runpy.py&quot;, line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\runpy.py&quot;, line 86, in _run_code
+    exec(code, run_globals)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel_launcher.py&quot;, line 18, in &lt;module&gt;
+    app.launch_new_instance()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\traitlets\config\application.py&quot;, line 1075, in launch_instance
+    app.start()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\kernelapp.py&quot;, line 739, in start
+    self.io_loop.start()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\tornado\platform\asyncio.py&quot;, line 205, in start
+    self.asyncio_loop.run_forever()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\asyncio\base_events.py&quot;, line 603, in run_forever
+    self._run_once()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\asyncio\base_events.py&quot;, line 1909, in _run_once
+    handle._run()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\asyncio\events.py&quot;, line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\kernelbase.py&quot;, line 545, in dispatch_queue
+    await self.process_one()
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\kernelbase.py&quot;, line 534, in process_one
+    await dispatch(*args)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\kernelbase.py&quot;, line 437, in dispatch_shell
+    await result
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\ipkernel.py&quot;, line 362, in execute_request
+    await super().execute_request(stream, ident, parent)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\kernelbase.py&quot;, line 778, in execute_request
+    reply_content = await reply_content
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\ipkernel.py&quot;, line 449, in do_execute
+    res = shell.run_cell(
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\ipykernel\zmqshell.py&quot;, line 549, in run_cell
+    return super().run_cell(*args, **kwargs)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\IPython\core\interactiveshell.py&quot;, line 3075, in run_cell
+    result = self._run_cell(
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\IPython\core\interactiveshell.py&quot;, line 3130, in _run_cell
+    result = runner(coro)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\IPython\core\async_helpers.py&quot;, line 128, in _pseudo_sync_runner
+    coro.send(None)
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\IPython\core\interactiveshell.py&quot;, line 3334, in run_cell_async
+    has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\IPython\core\interactiveshell.py&quot;, line 3517, in run_ast_nodes
+    if await self.run_code(code, result, async_=asy):
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\IPython\core\interactiveshell.py&quot;, line 3577, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File &quot;C:\Users\fwilden\AppData\Local\Temp\ipykernel_9340\90503979.py&quot;, line 1, in &lt;module&gt;
+    import pandas as pd
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\pandas\__init__.py&quot;, line 49, in &lt;module&gt;
+    from pandas.core.api import (
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\pandas\core\api.py&quot;, line 1, in &lt;module&gt;
+    from pandas._libs import (
+  File &quot;C:\Users\fwilden\AppData\Local\miniconda3\envs\jupyterbook\lib\site-packages\pandas\_libs\__init__.py&quot;, line 17, in &lt;module&gt;
+    import pandas._libs.pandas_datetime  # noqa: F401 # isort: skip # type: ignore[reportUnusedImport]
+</pre></div>
+</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="ne">AttributeError</span>: _ARRAY_API not found
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+<span class="n">File</span> <span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">jupyterbook</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">49</span>
+<span class="g g-Whitespace">     </span><span class="mi">46</span> <span class="c1"># let init-time option registration happen</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span> <span class="kn">import</span> <span class="nn">pandas.core.config_init</span>  <span class="c1"># pyright: ignore[reportUnusedImport] # noqa: F401</span>
+<span class="ne">---&gt; </span><span class="mi">49</span> <span class="kn">from</span> <span class="nn">pandas.core.api</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span>     <span class="c1"># dtype</span>
+<span class="g g-Whitespace">     </span><span class="mi">51</span>     <span class="n">ArrowDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="n">Int8Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span>     <span class="n">Int16Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">54</span>     <span class="n">Int32Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">55</span>     <span class="n">Int64Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">56</span>     <span class="n">UInt8Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">57</span>     <span class="n">UInt16Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">58</span>     <span class="n">UInt32Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">59</span>     <span class="n">UInt64Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span>     <span class="n">Float32Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span>     <span class="n">Float64Dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span>     <span class="n">CategoricalDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span>     <span class="n">PeriodDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span>     <span class="n">IntervalDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span>     <span class="n">DatetimeTZDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">66</span>     <span class="n">StringDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">67</span>     <span class="n">BooleanDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">68</span>     <span class="c1"># missing</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="n">NA</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>     <span class="n">isna</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">71</span>     <span class="n">isnull</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">72</span>     <span class="n">notna</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">73</span>     <span class="n">notnull</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="c1"># indexes</span>
+<span class="g g-Whitespace">     </span><span class="mi">75</span>     <span class="n">Index</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">76</span>     <span class="n">CategoricalIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">77</span>     <span class="n">RangeIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">78</span>     <span class="n">MultiIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">79</span>     <span class="n">IntervalIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">80</span>     <span class="n">TimedeltaIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">81</span>     <span class="n">DatetimeIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">82</span>     <span class="n">PeriodIndex</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">83</span>     <span class="n">IndexSlice</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">84</span>     <span class="c1"># tseries</span>
+<span class="g g-Whitespace">     </span><span class="mi">85</span>     <span class="n">NaT</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">86</span>     <span class="n">Period</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">87</span>     <span class="n">period_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span>     <span class="n">Timedelta</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span>     <span class="n">timedelta_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span>     <span class="n">Timestamp</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span>     <span class="n">date_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">92</span>     <span class="n">bdate_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">93</span>     <span class="n">Interval</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">interval_range</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">DateOffset</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="c1"># conversion</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>     <span class="n">to_numeric</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="n">to_datetime</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">99</span>     <span class="n">to_timedelta</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span>     <span class="c1"># misc</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span>     <span class="n">Flags</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span>     <span class="n">Grouper</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">103</span>     <span class="n">factorize</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>     <span class="n">unique</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>     <span class="n">value_counts</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span>     <span class="n">NamedAgg</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">107</span>     <span class="n">array</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">108</span>     <span class="n">Categorical</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span>     <span class="n">set_eng_float_format</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span>     <span class="n">Series</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span>     <span class="n">DataFrame</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span> <span class="kn">from</span> <span class="nn">pandas.core.dtypes.dtypes</span> <span class="kn">import</span> <span class="n">SparseDtype</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span> <span class="kn">from</span> <span class="nn">pandas.tseries.api</span> <span class="kn">import</span> <span class="n">infer_freq</span>
+
+<span class="n">File</span> <span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">jupyterbook</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="n">core</span>\<span class="n">api</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">pandas._libs</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="n">NaT</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">Period</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">Timedelta</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">Timestamp</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">pandas._libs.missing</span> <span class="kn">import</span> <span class="n">NA</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">pandas.core.dtypes.dtypes</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">ArrowDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">CategoricalDtype</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="n">PeriodDtype</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">jupyterbook</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">pandas</span>\<span class="n">_libs</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">17</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="c1"># Below imports needs to happen first to ensure pandas top level</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="c1"># module gets monkeypatched with the pandas_datetime_CAPI</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="c1"># see pandas_datetime_exec in pd_datetime.c</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="kn">import</span> <span class="nn">pandas._libs.pandas_parser</span>  <span class="c1"># isort: skip # type: ignore[reportUnusedImport]</span>
+<span class="ne">---&gt; </span><span class="mi">17</span> <span class="kn">import</span> <span class="nn">pandas._libs.pandas_datetime</span>  <span class="c1"># noqa: F401 # isort: skip # type: ignore[reportUnusedImport]</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="kn">from</span> <span class="nn">pandas._libs.interval</span> <span class="kn">import</span> <span class="n">Interval</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="kn">from</span> <span class="nn">pandas._libs.tslibs</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="n">NaT</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span>     <span class="n">NaTType</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="n">iNaT</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="p">)</span>
+
+<span class="ne">ImportError</span>: numpy.core.multiarray failed to import
 </pre></div>
 </div>
 </div>
