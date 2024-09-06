@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/home
+chapters:
+- file: docs/cv.ipynb
+- file: docs/media.ipynb
+- file: docs/travel.ipynb
