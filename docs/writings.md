@@ -15,6 +15,7 @@ Occassionaly, I try writing something down. Here, you can find the pieces of wri
 </details>
 <details>
   <summary><i>Zelfdoding in het overlevingspakket (Dutch)</i></summary>
+  
   In de afgelopen jaren is het veel gegaan over het noodpakket dat de gemiddelde Nederlander zou moeten hebben. In verband met een mogelijke natuurramp, cyberaanval of oorlog zou elke Nederlander een pakket met basisbehoeften in huis moeten hebben. De inhoud hiervan is nog redelijk gelijk als die van de noodpakketten van decennia geleden: flessen drinkwater, kaarsen, een radio op batterijen, een EHBO-doos, allemaal dingen die ook tijdens de Koude Oorlog in een dergelijk pakket zouden zitten. Maar met een decennia discussies over medisch-ethische kwesties achter de rug is het wellicht tijd om ook iets van tegenwoordig in de pakketten te doen: is het immers niet handig als in het overlevingspakket ook een zelfdodingspil zou zitten?
 
   Dat klinkt dramatisch: in een noodsituatie willen we iedereen zo lang mogelijk in leven houden, dus waarom zouden we het wanhopige mensen 'makkelijk maken' met een Pil van Drion tussen de rantsoenen? Toch denk ik dat de gevaren van een noodsituatie, gecombineerd met de hedendaagse blik op euthanasie, leiden tot de conclusie dat mensen voorbereid zouden mogen zijn op een vrijwillig levenseinde in het geval van een uitzonderlijke noodsituatie.
