@@ -11,6 +11,7 @@ def journey_generator(df):
         "The Maison Carrée of Nîmes",
         "Historic Fortified City of Carcassonne",
         "Canal du Midi",
+        "Routes of Santiago de Compostela in France",
         "Episcopal City of Albi"
     ]:
         row = df[df['name_en'] == name].reset_index(drop=True)
@@ -23,6 +24,20 @@ def journey_generator(df):
         "Historic Centre of Oporto, Luiz I Bridge and Monastery of Serra do Pilar",
         "Monastery of the Hieronymites and Tower of Belém in Lisbon",
         "Cultural Landscape of Sintra"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "yellow", "Portugal, 2023"
+
+    lats = []; lons = []
+    for name in [
+        "La Grand-Place, Brussels",
+        "Stoclet House",
+        "Major Town Houses of the Architect Victor Horta (Brussels)",
+        "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
+        "Flemish Béguinages",
+        "The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement"
     ]:
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
