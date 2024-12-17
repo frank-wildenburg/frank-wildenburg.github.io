@@ -1,6 +1,6 @@
 # Writings
 
-Occasionaly, I try writing something down. Here, you can find the pieces of writing I thought were okay enough to share online.
+Occasionally, I try writing something down. Here, you can find the pieces of writing I thought were okay enough to share online.
 
 ## Academic papers
 <details>
