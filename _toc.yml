@@ -7,4 +7,4 @@ chapters:
 - file: docs/cv.ipynb
 - file: docs/media.ipynb
 - file: docs/travel.ipynb
-- file: docs/writings.md
+- file: docs/writings.ipynb
