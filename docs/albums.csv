@@ -7,13 +7,13 @@
 6;Nirvana;Nevermind;1991;X;CD;
 7;Fleetwood mac;Rumours;1977;X;CD;
 8;Prince;Purple rain;1984;X;LP;
-9;Bob Dylan;Blood on the tracks;1975;;;
+9;Bob Dylan;Blood on the tracks;1975;X;CD;
 10;Lauryn Hill;The miseducation of Lauryn Hill;1998;X;CD;
 11;Beatles;Revolver;1966;;;
 12;Michael Jackson;Thriller;1982;X;LP;
 13;Aretha Franklin;I never loved a man the way I love you;1967;X;CD;
 14;Rolling stones;Exile on Main street;1972;X;LP;
-15;Public enemy;It takes a nation of millions to hold us back;1988;;;
+15;Public enemy;It takes a nation of millions to hold us back;1988;X;CD;
 16;Clash;London calling;1979;;;
 17;Kanye West;My beautiful dark twisted fantasy;2010;X;CD;
 18;Bob Dylan;Highway 61 revisited;1965;;;
@@ -34,7 +34,7 @@
 33;Amy Winehouse;Back to black;2006;X;CD;
 34;Stevie Wonder;Innervisions;1973;X;LP;
 35;Beatles;Rubber soul;1965;;;
-36;Michael Jackson;Off the wall;1979;;;
+36;Michael Jackson;Off the wall;1979;X;CD;
 37;Dr. Dre;The chronic;1992;;;
 38;Bob Dylan;Blonde on blonde;1966;;;
 39;Talking heads;Remain in light;1980;X;CD;
@@ -57,11 +57,11 @@
 56;Liz Phair;Exile in Guyville;1993;;;
 57;Band;The Band;1969;;;
 58;Led zeppelin;Led zeppelin 4;1971;X;CD;
-59;Stevie Wonder;Talking book;1972;;;
+59;Stevie Wonder;Talking book;1972;X;CD;
 60;Van Morrison;Astral weeks;1968;X;CD;
 61;Eric B & Rakim;Paid in full;1987;;;
 62;Guns n' roses;Appetite for destruction;1987;X;CD;
-63;Steely dan;Aja;1977;;;
+63;Steely dan;Aja;1977;X;CD;
 64;Outkast;Stankonia;2000;;;
 65;James Brown;Live at The Apollo, october 24, 1962;1963;;;
 66;John Coltrane;A love supreme;1965;;;
@@ -118,7 +118,7 @@
 117;Kanye West;Late registration;2005;X;CD;
 118;Eagles;Hotel California;1976;X;LP;
 119;Sly and the family Stone;Stand!;1969;;;
-120;Van Morrison;Moondance;1970;;;
+120;Van Morrison;Moondance;1970;X;CD;
 121;Elvis Costello;This year's model;1978;;;
 122;Nine inch nails;The downward spiral;1994;X;CD;
 123;Led zeppelin;Led zeppelin 2;1969;X;CD;
@@ -200,7 +200,7 @@
 199;Pavement;Slanted and enchanted;1992;;;
 200;Sade;Diamond life;1984;X;CD;
 201;A Tribe called quest;Midnight marauders;1993;;;
-202;Björk;Homogenic;1997;;;
+202;Björk;Homogenic;1997;X;CD;
 203;Nick Drake;Pink moon;1972;;;
 204;Kanye West;Graduation;2007;;;
 205;Cat Stevens;Tea for the tillerman;1970;;;
@@ -338,7 +338,7 @@
 337;Bob Dylan;John Wesley Harding;1967;;;
 338;Brian Eno;Another green world;1975;;;
 339;Janet Jackson;Rhythm nation 1814;1989;;;
-340;Snoop Dogg;Doggystyle;1993;;;
+340;Snoop Dogg;Doggystyle;1993;X;CD;
 341;Smashing pumpkins;Siamese dream;1993;X;CD;
 342;Beatles;Let it be;1970;;;
 343;Sly and the family Stone;Greatest hits;1970;;;
