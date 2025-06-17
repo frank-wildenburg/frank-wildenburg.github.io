@@ -6,6 +6,7 @@ Hi! I am currently a full-time teacher (docent-4) at the University of Amsterdam
 
 ## Updates
 
+- I wrote [an opinion piece on the values of AI-education](https://www.folia.nl/nl/opinie/166907/huidig-ai-onderwijs-is-te-eenzijdig-gericht-op-technologie) for _Folia_. You can also find an extended version of this essay on this website.
 - I gave a talk for the [Descartes Alumnigenootschap](http://descartesalumnigenootschap.nl/) on my job as a full-time university teacher and how my experience during the Descartes programme at Utrecht University helps me with this
 - Started this website :)
 - Our paper _Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? Ask the DUST!_ has been accepted to the ACL Findings!
