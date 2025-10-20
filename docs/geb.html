@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gödel, Escher, Bach &#8212; Frank Wildenburg</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-VZZ8DCTMLV"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-VZZ8DCTMLV');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-VZZ8DCTMLV');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/geb';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="icon" href="../_static/frakturf.jpg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="home.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/frank.jpeg" class="logo__image only-light" alt="Frank Wildenburg - Home"/>
+    <script>document.write(`<img src="../_static/frank.jpeg" class="logo__image only-dark" alt="Frank Wildenburg - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="home.html">
+                    Frank Wildenburg
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cv.html">Bio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="travel.html">Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writings.html">Writings</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/geb.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Gödel, Escher, Bach</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Gödel, Escher, Bach</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-geb">Part 1: GEB</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-egb">Part 2: EGB</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="godel-escher-bach">
+<h1>Gödel, Escher, Bach<a class="headerlink" href="#godel-escher-bach" title="Link to this heading">#</a></h1>
+<p>In 2025-2026 Wouter van Etteger and I co-organized a reading group about Hofstadter’s <em>Gödel, Escher, Bach</em>. Here you can find the ‘reading guides’ I made for this group.</p>
+<section id="part-1-geb">
+<h2>Part 1: GEB<a class="headerlink" href="#part-1-geb" title="Link to this heading">#</a></h2>
+<details>
+  <summary><i>Introduction: A Musico-Logical Offering</i></summary>
+The book starts with an introduction, although this introduction may just as well be seen as an executive summary of the main themes of the book. One of the main parts of the introduction is introducing the main 'subjects' of the book, all of whom will be extensively covered throughout the rest of the book:
+<ul class="simple">
+<li><p>Bach, the musician, known (amongst other things) for creating fugas</p></li>
+<li><p>Escher, the artist, known for creating (seemingly) paradoxical artworks</p></li>
+<li><p>Gödel, the logician, known for a Gödel’s theorem, which says formal systems cannot be both complete and consistent</p></li>
+</ul>
+<p>One of the main characteristics linking the above is the concept of the Strange Loop. Hofstadter defines such a loop as a (hierarchical) system where we can arrive at the starting ‘level’ by consistently ‘heading in one direction’. We can see this in Bach (arriving back at a note after going consistently up from this note), in Escher (returning at a previous point of a staircase after only going up), and in Gödel (by representing statements about numbers as numbers themselves).</p>
+<p>Hofstadter then describes how this concept has been a challenge to (mathematical) logic in the previous century, finally arriving at computers and the concept of (artificial) intelligence. Hofdstadter’s main claim here is that Strange Loops form the core of the concept of intelligence.</p>
+<p>Finally, Hofstadter describes the structure of the book, which consists of Dialogues (inspired by Zeno and Lewis Carroll) metaphorically introducing a topic, followed by Chapters that cover the topic more in depth and abstractly</p>
+<p>Reading tip: when describing Bach, Hofstadter introduces the term ‘ricercar’, a type of fugue, but also meaning ‘searching’. This term refers to riddles and games hidden in Bach’s fugas, but just as much to GEB itself. Indeed, the book contains many hidden messages, some of which are later made explicit, while others remain hidden. When reading the book, it is a good exercise to try to spot these riddles. For example, can you find the link to (the name of) Chapter 1 hidden in the Three-Part Intervention?</p>
+</details><details>
+  <summary><i>Chapter I: The MU-puzzle</i></summary>
+  Chapter 1 introduces the concept of formal systems and ways of thinking about them, using the so-called MIU-system. In essence, a formal system consists of 1) starting theorems, called axioms, and 2) rules for deriving new theorems from existing theorems. A step-by-step demonstration of deriving a theorem is called a derivation. A derivation also proves its final theorem.
+<p>One can reason about formal systems both from inside and outside the system. Outside (and only outside) of a formal system we can use our intelligence to reason about a system - but we do so using knowledge that is not contained in the system! For humans, reasoning ‘outside’ the system is done almost automatically</p>
+<p>Reading tip: the idea of reasoning inside and outside of a system will be used throughout the book, so try to think about what these terms mean here. For example, which part of a decision procedure is ‘inside’ a formal system, and which part is ‘outside’?</p>
+<p>Finally, Hofstadter introduces the concept of a decision procedure. Such a procedure, when given a theorem, always produces a proof of that theorem in a finite amount of time if one exists.</p>
+<p>Reading tip : the question of this chapter is: can we create “MU” from “MI”? After reading the chapter, you probably know the answer. But suppose you wanted to prove this, how would you do so? What would a formal system need to create such a proof?</p>
+</details><details>
+  <summary><i>Chapter II: Meaning and Form in Mathematics</i></summary>
+  This chapter discusses the link between formal systems and reality; the 'meaning' of formal systems. Hofstadter does so by introducing a new formal system, the pq-system, that corresponds to some part of reality.
+<p>An important distinction made by Hofstadter is that a statement corresponding to some part of reality does not mean that statement ‘means’ that part of reality. Rather, we say that there is an isomorphism between a system and reality - some correspondence, or translation, that preserves some structure (in this case, the correspondence that all theorems are true when interpreted).</p>
+<p>The specific correspondence chosen is called an interpretation. An interpretation can be meaningful (corresponding to some part of reality), or meaningless (in which case theorems sound no ‘better’ or ‘true’ than non-theorems).</p>
+<p>We can also distinguish active and passive meanings of a system. If a meaning is active, we can use it to create new rules in the system. If a meaning is passive, we may choose a meaning (e.g., based on isomorphisms), but not create new rules/theorems for the system. For example, in a formal system, we may not create new rules or theorems based on their meaning even if they seem true! Doing so would result in a different formal system, after all.</p>
+<p>Of course, we would like our formal systems to be as meaningful as possible, i.e., correspond to reality as much as possible. For example, as a mathematician, we would like to have a formal system representing ideal numbers to be as close to ‘real’ numbers as possible. But nevertheless, reality and formal systems are independent from each other - only the interpretation of the formal system through an isomorphism connects them.</p>
+<p>Reading tip: the book (for now) mainly considers formal systems of mathematics, but formal systems exist in all parts of the world. For example, the weather prediction as a formal system of the real weather. Try to think about why you can consider things like this a formal system.</p>
+</details><details>
+  <summary><i>Chapter III: Figure and Ground</i></summary>
+  Last chapter's system captures concepts using only typographical manipulations (i.e., without needing to consider the meaning of the underlying concept). This chapter shows that such a typographical system can capture more complicated concepts, such as the concept of prime numbers.
+<p>When doing so, it’s tempting to use something ‘not being a theorem’ as a fact in proving something else being a theorem. For example, using something not being divisible as a way to prove something is prime. Yet doing so is an oversimplification, and in some cases, not possible at all.</p>
+<p>Hofstadter illustrates this using a comparison with art. In this comparison, theorems can be seen as the positive space of a work, and non-theorems as the negative space. Yet just as there negative spaces that are not the positive space of some other work, there are also formal systems whose set of non-theorems are not the set of theorems of any formal system (formally: some recursively enumerable sets are not recursive).</p>
+<p>Reading tip: Hofstadter explains <em>why</em> this happens later in the book, so for now, it’s fine to just take it as a given fact - but do try to understand what this fact expresses, and why that matters.</p>
+<p>(This also means, as a logical consequence, that these formal systems do not have a typographical decision procedure).</p>
+<p>Luckily, prime numbers are not such a set, and so the chapter ends by giving a decision procedure in our formal system. Appropriately, this procedure does not depend on some recursive definition (i.e., being divisible, or in other words, being non-prime) but defines non-divisibility directly.</p>
+<p>Reading tip: have you deciphered the contracrostipunctus? And if you have: have you deciphered it?</p>
+</details><details>
+  <summary><i>Chapter IV: Consistency, Completeness, and Geometry</i></summary>
+  In very broad terms, this chapter is about properties that we might want (an interpretation of) a formal system to have: consistency and completeness. 
+<p>Consistency can either mean that the formal system doesn’t contradict the real world (external consistency), or that it doesn’t contradict itself (internal consistency).  For example, a formal system might be externally inconsistent if it says that Mount Everest isn’t the highest mountain, and internally inconsistent if Mount Everest both is and isn’t the highest mountain at the same time. Completeness, meanwhile, says that all real-world statements expressible in our formal system are also theorems of that formal system.</p>
+<p>Hofstadter emphasizes that both completeness and consistency are properties of the interpretation of a formal system, not the formal system itself. For example, two theorems that seem contradictory (and would therefore break internal consistency) might be perfectly fine when given the right interpretation.</p>
+<p>However, it is difficult to tell whether we have the right interpretation. This is especially difficult when concepts in our formal system are also ‘normal’ words used in everyday language. Hofstadter illustrates this using non-Euclidean geometry as an example. For many years, people thought these geometries were inconsistent, only to eventually find out that they are not when we consider the right meaning of terms like ‘point’ and ‘line’.</p>
+<p>An important theorem about completeness and consistency is Gödel’s Theorem, which says that there is no complete and consistent ‘strong’ axiomatic system. This theorem is isomorphically illustrated by the Contracrostipunctus. For some, this is seen as a big problem. Hofstadter, however, argues that this simply means we have unrealistic expectations.</p>
+<p>Reading tip: the mapping between the Contracrostipunctus and Gödel’s theorem is really the key of this chapter. If you want, you can try rereading the Contracrostipunctus with the given mapping in mind.</p>
+</details><details>
+  <summary><i>Chapter V: Recursive Structures and Processes</i></summary>
+  Chapter 5 concerns the concept of recursion. Recursion is a property where something (a sentence, a song, etc.) contains a smaller, possibly varied version of itself. 
+<p>Hofstadter starts by introducing some terminology, originating from computer science. When dealing with recursion, ‘push’ means to ‘rise a level deeper’ - to start a new task, while remembering the details of your old task. To ‘pop’ is the opposite: to finish work on one level and ‘return’ to the point you left on a previous level. Information about these levels - which tasks are involved and where you are in these tasks - is stored on a ‘stack’.</p>
+<p>Hofstadter then gives many examples of recursion:</p>
+<ul class="simple">
+<li><p>In music (like Bach’s Kleines harmonisches Labyrinth)</p></li>
+<li><p>In language (like a noun which contains a noun somewhere, like “the strange bagels that <em>the purple cow without horns</em> gobbled”)</p></li>
+<li><p>In mathematics (like the Fibonacci sequence)</p></li>
+<li><p>In physics (properties of the behaviour of particles)</p></li>
+<li><p>In art (Escher)</p></li>
+<li><p>In games (strategies in Chess)
+These concepts can also be graphically represented, for example with Recursive Transition Networks (RTNs).</p></li>
+</ul>
+<p>In some way, the ‘levels’ of recursion are ‘the same’, in that they share some properties. At the same time, however, they do differ. In particular, a new level of recursion is almost always going to be <em>simpler</em> than a previous level, and it’s this that allows recursive behaviours to ‘bottom out’ and finish - i.e., this is what makes a recursive definition different from a circular definition.</p>
+</details><details>
+  <summary><i>Chapter VI: The Location of Meaning</i></summary>
+  Having discussed what makes two things 'the same', we now discuss whether one thing can be 'different' - in particular, whether the meaning of a message is inherent to that message, or also dependent on a mechanism interpreting it. 
+<p>For this discussion, Hofstadter introduces three levels of messages:</p>
+<ol class="arabic simple">
+<li><p>The frame message, which simply communicates that something <em>is</em> a message</p></li>
+<li><p>The outer message, which communicates how the message should be decoded</p></li>
+<li><p>The inner message, which is the ‘intended’ message</p></li>
+</ol>
+<p>In ‘normal’ messages, only the inner message is explicitly recognized, but when a message is more abstract or encoded, we start to need more help from the other levels. For example, to turn DNA into a creature, or decode a message from aliens, we will a) first need to understand whether (and where) there even is a message, b) then need to understand how to interpret this message, and c) finally need to actually understand the intended meaning. This is made even more difficult if the encoded message doesn’t have the same structure as the meaning. For example, a creature might have a certain fingerprint without having a ‘fingerprint-gene’.</p>
+<p>Reading tip: you may also compare this to the distinction between formal systems and their interpretation in chapter 2</p>
+<p>The main question Hofstadter asks in this chapter is “is the meaning of a message located entirely in the message?”. For something like a book, it seems logical that the meaning remains the same even if it is read by someone else or somewhere else. But is the same true for a strand of DNA that might develop completely differently when placed in a different chemical environment? Hofstadter’s answer: some forms of messages are so inherent/universal that all forms of intelligence will be able to understand them, and hence (only) these messages can be said to have an ‘intrinsic’ meaning.</p>
+<p>Reading tip: the idea of having to communicate with aliens is a good aid for understanding the three levels of a message. Try thinking how you would do such communication: what would make clear that there <em>is</em> a message, how would the aliens learn how to <em>decode</em> it, and how would they then <em>understand</em> it?</p>
+</details><details>
+  <summary><i>Chapter VII: The Propositional Calculus</i></summary>
+  This chapter introduces one more (and perhaps the most famous) formal system: that of the propositional logic, a formal language that attempts to formalize human reasoning. It does so by formalizing the concepts of 'and', 'or', 'not' and 'if...then...'.
+<p>Reading tip: if you’ve taken a course in formal logic, you’ve probably seen this system before, although note that Hofstadter very consciously introduces very little rules (like only one De Morgan rule).</p>
+<p>Using this system, we can create derivations for statements like ‘if x is true, and we know that ‘if x then y’, then y must be true’. Furthermore, the system does so purely typographically, so we can do so regardless of the meaning/content of atoms like ‘x’ and ‘y’. Another nice property of the system is that is has a decision procedure (although it is not covered in the book).</p>
+<p>Of course, it’d be nice to make some formal claims <em>about</em> the system as well. But doing so would be creating a metatheory, about which we could create a metametatheory, and so on. Doing so can get us in trouble - although propositional logic is a solid, simple base for more complicated systems.</p>
+<p>Finally, a note about contradiction. In propositional logic, if we even derive a contradiction (‘p and not p’), we can conclude everything we want to. This idea of ‘everything follows from a contradiction’ is one of the reasons why we might want to avoid contradictions at all costs in our formal systems, even though we as humans can handle such contradictions in our normal thinking.</p>
+<p>Reading tip: this chapter might make clearer why concepts created in earlier chapters, such as concepts like decision procedures or the discussion from the Two-Part Intervention, are such a big deal for logicians.</p>
+</details><details>
+  <summary><i>Chapter VIII: Typographical Number Theory</i></summary>
+  One more formal system, then? This chapter introduces the typographical number theory (TNT), a system intended to express all facts about number theory. It does so by formalizing concepts like "is equal to", "larger than" and "plus", as well as "for all" and "there exists". TNT essentially encodes the five Peano-axioms, five "semi-formal" statements about the natural numbers (0, 1, 2, 3,...) made by Giuseppe Peano. 
+<p>Reading tip: for those familiar with formal logic: this is essentially first-order logic with equality and a successor-predicate.</p>
+<p>We encounter some problems, though. First of all, we notice that we can derive all statements of a certain form (0+0=0, 0+1=1, 0+2=2,…) but not the general form (0+n=n). Because of this, we conclude that TNT is a so-called omega-inconsistent system (although note that this is less bad than ‘normal’ inconsistency. In fact, we could introduce “not 0+n=n” without introducing inconsistency).</p>
+<p>The bigger problem: how can we prove the (general) consistency of TNT? One way we might try this is by proving it using a less “strong” system, which doesn’t use facts from number theory. This is something that Hilbert’s programme tried. To no avail: Gödel proved that any system strong enough to prove the consistency of TNT, must be just as strong as TNT itself.</p>
+<p>Reading tip: the chapter itself contains additional exercises, which you can use to understand TNT. Alternately, try understanding the Peano axioms first and then use those to understand TNT.</p>
+</details><details>
+  <summary><i>Chapter IX: Mumon and Gödel</i></summary>
+  We start with Zen Buddhism. One of its basic tenets is that there is no way to characterize Zen, since no words can capture truth. Yet studying Zen is still worth our time, and this can be done through Koans. These are supposed to be triggers, which create confusion and encourage the listener to 'thread outside words/logic' - potentially leading to enlightenment (although enlightenment isn't the final goal of Zen).
+<p>Hofstadter compares this with formal systems: words/formal systems can express some truths, but not all. This can also be compared to Escher and Bach: we can express some characteristic of their works using words/logic, but inevitably miss out on describing other parts as well. The rest of this chapter will explain why this is the case.</p>
+<p>Disclaimer: my understanding of Zen Buddhism is considerably smaller than that of logic, so take this reading guide with a grain of salt.</p>
+<p>Back to Hofstadter’s MU. While we couldn’t solve the MU-puzzle in the MIU-system directly, we can do so using number theory. Using a process using Gödel-numbering, we can express theorems of the MIU-system as numbers, and reason about them using number theory.</p>
+<p>In fact, we can do so for every formal system! Using Gödel-numbering, we can translate a formal system into typographical operations on numbers, and from there into mathematical operations on numbers. In short: a number can be both a symbol and a theorem, (i.e., there is an isomorphism between these).</p>
+<p>But if we can do so for every formal system, and we expressed number theory as the formal system TNT, then it follows that we can also Gödel-number TNT itself. But if theorems about TNT express facts about numbers, <em>and</em> theorems about TNT can be Gödel-numbered into numbers, then theorems of TNT can also express facts about theorems about TNT itself. It other words, TNT ‘tries to swallow itself’.</p>
+<p>This is where the final trick comes into play: if this is the case, then we can create some string G that expresses “G is not a theorem of TNT”. But if this is a theorem  of TNT, then it must also be false (and hence lead to inconsistency). And since we assumed TNT never lead to falsity, we must conclude that G is true - and hence, we have something that is true, but not a theorem of TNT.</p>
+<p>Reading tip: how we can create G is explained in future chapters. For now, assume that is does exist, and try to understand how this results in inconsistency or incompleteness for TNT.</p>
+</details>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="part-2-egb">
+<h1>Part 2: EGB<a class="headerlink" href="#part-2-egb" title="Link to this heading">#</a></h1>
+<p>To be continued!</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Gödel, Escher, Bach</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-geb">Part 1: GEB</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-egb">Part 2: EGB</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Frank Wildenburg
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
