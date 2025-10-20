@@ -152,4 +152,24 @@ def journey_generator(df):
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
     yield lats, lons, "deeppink", "Luxembourg and Germany, 2025"
 
+    lats = []; lons = []
+    for name in [
+        "Works of Antoni Gaudí",
+        "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "Old Town of Segovia and its Aqueduct",
+        "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "Historic City of Toledo",
+        "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "Cathedral, Alcázar and Archivo de Indias in Seville",
+        "Alhambra, Generalife and Albayzín, Granada",
+        "Historic Centre of Cordoba",
+        "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
+        "Historic Site of Lyon"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "gray", "(Planned) Spain 2026"
+
 
