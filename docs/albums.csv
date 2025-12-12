@@ -1,7 +1,7 @@
 ﻿#;Artist;Album;Year;Have;Format;Notes
 1;Marvin Gaye;What's going on;1971;X;CD;
 2;Beach boys;Pet sounds;1966;X;CD;
-3;Joni Mitchell;Blue;1971;;;
+3;Joni Mitchell;Blue;1971;X;CD;
 4;Stevie Wonder;Songs in the key of life;1976;X;LP;
 5;Beatles;Abbey road;1969;X;CD;
 6;Nirvana;Nevermind;1991;X;CD;
@@ -90,7 +90,7 @@
 89;Erykah Badu;Baduizm;1997;;;
 90;Neil Young;After the goldrush;1970;X;CD;
 91;Bruce Springsteen;Darkness on the edge of town;1978;;;
-92;Jimi Hendrix;Axis: bold as love;1967;;;
+92;Jimi Hendrix;Axis: bold as love;1967;X;CD;
 93;Missy Elliott;Supa dupa fly;1997;;;
 94;Stooges;Fun house;1970;X;CD;
 95;Drake;Take care;2011;;;
@@ -259,7 +259,7 @@
 258;Joni Mitchell;The hissing of summer lawns;1975;;;
 259;Janis Joplin;Pearl;1971;;;
 260;Slits;Cut;1979;;;
-261;Beastie boys;Check your head;1992;;;
+261;Beastie boys;Check your head;1992;X;CD;
 262;New order;Power, corruption and lies;1983;;;
 263;Beatles;A hard day's night;1964;;;
 264;Pink floyd;Wish you were here;1975;X;CD;
@@ -307,7 +307,7 @@
 306;Al Green;I'm still in love with you;1972;;;
 307;Sam Cooke;Portrait of a legend 1951-1964;2003;;;
 308;Brian Eno;Here come the warm jets;1974;;;
-309;Joy division;Closer;1980;;;
+309;Joy division;Closer;1980;X;CD;
 310;Wire;Pink flag;1977;;;
 311;Neil Young;On the beach;1974;;;
 312;Solange;A seat at the table;2016;;;
