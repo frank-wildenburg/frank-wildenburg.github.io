@@ -362,7 +362,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="godel-escher-bach">
 <h1>Gödel, Escher, Bach<a class="headerlink" href="#godel-escher-bach" title="Link to this heading">#</a></h1>
-<p>In 2025-2026 Wouter van Etteger and I co-organized a reading group about Hofstadter’s <em>Gödel, Escher, Bach</em>. Here you can find the ‘reading guides’ I made for this group.</p>
+<p>Starting in the summer of 2025, Wouter van Etteger and I co-organized a reading group for the classic book <em>Gödel, Escher, Bach: an Eternal Golden Braid</em> by Douglas Hofstadter. Our intent was to read through the book in eight months, discussing the book through four digital meetings and a group chat, and finishing by visiting a performance of <em>Die Kunst der Fuge</em> by Bach, one of the works discussed in the book. On this page,you can find the chapter notes I wrote for this group.</p>
 <section id="part-1-geb">
 <h2>Part 1: GEB<a class="headerlink" href="#part-1-geb" title="Link to this heading">#</a></h2>
 <details>
@@ -466,7 +466,49 @@ These concepts can also be graphically represented, for example with Recursive T
 </section>
 <section id="part-2-egb">
 <h2>Part 2: EGB<a class="headerlink" href="#part-2-egb" title="Link to this heading">#</a></h2>
-<p>To be continued!</p>
+<details>
+  <summary><i>Chapter X: Levels of Description, and Computer Systems</i></summary>
+<p>We’ve seen that TNT and Gödel’s theorem can be understood on different levels, and the same is true for many things, such as fugues. Sometimes this causes confusion, but other times it’s no problem at all - we have no problem distinguishing humans from the cells composing them. This can be made possible by considering “chunks” of the individual components, such as organs as groups of cells.</p>
+<p>Reading tip: the comparison to human biology can be continued throughout this chapter, and might makes things intuitively understandable</p>
+<p>Hofstadter compares this to programming languages. At their core, these languages consist of machine languages - off/on-states, “ones and zeroes” - yet these can be “grouped together” in assembly language and even further in higher-level languages. Compilers and interpreters can “translate” from high to low-level languages. At some point, we might ignore the lower levels entirely, e.g., by “bootstrapping” compilers, writing them in a compiled language.</p>
+<p>Reading tip: you can compare this to the chapter about push/pop: one command in a high-level language “pushes” multiple, low-level commands, after which we “pop” back to the high level.</p>
+<p>Such high-level languages - whether they be programming languages or something else - make things easier, and give us more “room for thought”: a high-level language suited for some purpose makes expressing things related to that purpose easier. Yet we also lose some determinism: we no longer know exactly what happens at the lower level (which might differ per situation, e.g., per type of computer), which might result in outputs we couldn’t predict with certainty.</p>
+</details>
+<details>
+  <summary><i>Chapter XI: Brains and Thoughts</i></summary>
+<p>Reading tip: did you see the isomorphism between the ant fugue in the book and the fugue discussed <em>in</em> the ant fugue?</p>
+<p>In trying to create artificial intelligence, we learned a lot about how human intelligence works. This chapter describes how human intelligence, in particular vision, might work. In the brain, descriptions don’t have to be pinned to specific objects - we say that thought is <em>intensional</em>. But how does that work?</p>
+<p>The smallest element of the brain, the metaphorical ‘ant’ from the ant fugue, is the neuron, cells which input and output signals to other neurons. Can these neurons be combined to well-defined modules? Some evidence suggests that we should be able to, but scientists haven’t done so as of the writing this book.</p>
+<p>Nevertheless, Hofstadter suggests calling such modules “symbols”, because unlike neurons, they symbolize concepts in the real world. In other words, there is a (fine-grained) isomorphism between these symbols and the world. These symbols, Hofstadter suggests, would be about the “size” of  - i.e., would represent things like - a word or phrase.</p>
+<p>So then, would these symbols represent (general) classes or (specific) instances - e.g., would a symbol represent all newspapers, or the specific newspaper that I have today? Hofstadter suggests both can be true: specific examples can ‘split off’ from their prototypical class and become symbols representing classes in their own right. But considering this in detail shows many complications, and shows that considering the brain as a well-defined state of symbols and activations is too simplistic.</p>
+<p>So now we have two questions: (how) can neurons create symbols, and how can symbol activation be explained in terms of itself? If the latter is true, we could also create intelligence on non-human hardware, since in that case we could create such symbols without depending on neurons.</p>
+</details><details>
+  <summary><i>Chapter XII: Minds and Thoughts</i></summary>
+<p>Having introduced the concept of symbols, this chapter uses it to ask more questions about the brain and thought. For example: can we find an isomorphism between different human brains, or perhaps even between humans and animals? Definitely not on a neural level, nor an exact isomorphism, but perhaps a partial isomorphism on symbol-level? But what would a partial isomorphism even be? For example, would we be looking for similar characteristics on a local level, or on a global level?</p>
+<p>Hofstadter illustrates how this might work using multiple examples, like the poem Jabberwocky or the map of Aporia. Not all details can be directly translated, but the relationship of details amongst themselves appears to be roughly similar - the feeling of the poem remains the same, and navigating Aporia is still possible, even if small details may have changed in translation. We can see this similarity as a rough isomorphism</p>
+<p>Using this concept of rough isomorphisms, we can compare systems like brains, languages and programming languages.</p>
+<p>This creates a new question: is there a way to “read” a system at a high-level (e.g., read thoughts based on the symbols active in a brain)? Hofstadter claims that this is possible, although we would need a language to describe these states in. For example, which thoughts are real - describe a persons actual beliefs - and which are just imagination.</p>
+<p>One more question would be where the “self” is in this system of symbols. Hofstadter claims that the self would be a subsystem of the brain: a highly sophisticated group of systems able to interact both with each other and the rest of the brain.</p>
+</details><details>
+  <summary><i>Chapter XIII: BlooP and FlooP and GlooP</i></summary>
+<p>We have seen that both formal systems (e.g., the self-reference in TNT) and human thought (the ‘self’ as part of the brain) involve self-reference. For formal-systems, this self-reference was only relevant for ‘sufficiently strong’ formal systems. But what does that mean? For formal systems, a sufficient condition for being ‘sufficiently strong’ is containing all primitive recursive truths. This chapter aims to illustrate this concept, as well as related terms.</p>
+<p>To do so, the chapter introduces a number of programming languages. The first one of these is BlooP. BlooP can do some things typical of programming language: adding, multiplying and comparing numbers, branch based on ‘if-statements’, and do things multiple times using ‘loops’. Its defining characteristic, however, is that these loops can only ‘loop’ a pre-defined number of times. In other words, if you tell a BlooP-programme to ‘do something n times’, then the number n must be known before starting the loop!</p>
+<p>Reading tip: the book provides a syntax for the programming languages, but this really doesn’t matter too much, so skip it if necessary - it’s the expressiveness of the different languages that matters most</p>
+<p>It turns out the functions one can express in BlooP are precisely the primitive recursive functions. In other words, TNT, being sufficiently strong, has all positive BlooP tests as theorems, and all negative BlooP tests as nontheorems. But does that mean everything can be expressed as a BlooP test? It turns out that is not true. Using a method called the <em>diagonal method</em>, we can create functions which are well-defined, but also (provably) not valid BlooP programmes.</p>
+<p>What if we drop the boundedness of loops that defines BlooP? This language might be stronger, but it has a downside: it might contain programmes that never stop. And, in fact, Turing showed that we can also never know whether a programme will stop or not (or at least, there is no general-purpose test that decides this for any programme). Should we move on to an even stronger language, then? The so-called <em>Church-Turing Thesis</em> argues that such languages do not exist - and, at the very least, we know that no such language has ever been found.</p>
+</details><details>
+  <summary><i>Chapter XIV: On Formally Undecidable Propositions of TNT and Related Systems</i></summary>
+<p>Remember when chapter 9 claimed we could create some sentence ‘G’ that could lead to either inconsistency or incompleteness? This chapter discusses how it is that we can create such a sentence in TNT.</p>
+<p>The core of the idea is what Hofstadter calls ‘arithmoquining’. This consists of taking a sentence in TNT - in particular, a sentence with one variable - and ‘inserting’ that sentence into itself using Gödel numbering. This results in the sentence ‘talking about itself’, the form of self-reference that results in Godel’s theorems.</p>
+<p>Reading tip: once again, the dialogue preceding the chapter gives a good introduction on what the chapter discusses formally. The main difference to keep in mind is that G does while being a number, instead of text.</p>
+<p>In fact, Gödel’s second incompleteness theorem states that no consistent system can prove it’s own consistency. This is also where omega-inconsistency comes back: we cannot prove G, which is a claim about all natural numbers, yet for each <em>individual</em> number we <em>can</em> prove this claim.</p>
+<p>So what do we do now? We could consider expanding TNT in two ways: either by accepting G as a new axiom (the ‘standard’ extension), or by accepting the negation of G as a new axiom. The latter seems contradictory - how can something be true for all individual natural numbers but not for all numbers? - yet we handle this by accepting ‘supernatural numbers’, numbers that exist ‘beyond’ infinity.</p>
+</details><details>
+  <summary><i>Chapter XV: Jumping out of the System</i></summary>
+<p>So why don’t we just add G to our formal system? Well, it turns out that in this formal system - TNT+G - we can repeat the same trick to create new undecidable sentences G’. And so on, ad infinitum. The same happens if we add the negation of G, or even if we try to add the entire “pattern” of G at once. TNT can be said to suffer from an <em>essential incompleteness</em>, one that cannot be eliminated.</p>
+<p>This fact was used by J.R. Lucas to argue that the human mind cannot be interpreted as a machine (i.e., that there are things that humans can do but computers cannot). For we as humans can use this mechanism to <em>always</em> create a statement that is true, but cannot be generated (i.e., “understood”) by computers.</p>
+<p>But is this true? Hofstadter argues it is not. If there is no algorithm that can describe how to “Gödelize” any system, then at one point this procedure will become too complicated for humans as well.</p>
+</details><p>To be continued!</p>
 </section>
 </section>
 
