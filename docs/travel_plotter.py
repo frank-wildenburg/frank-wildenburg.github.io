@@ -93,10 +93,7 @@ def journey_generator(df):
         "Abbey and Altenmünster of Lorsch",
         "Speyer Cathedral",
         "ShUM Sites of Speyer, Worms and Mainz",
-        "Maulbronn Monastery Complex",
-        "Strasbourg, Grande-Île and <em>Neustadt</em>",
-        "Place Stanislas, Place de la Carrière and Place d'Alliance in Nancy",
-        "Völklingen Ironworks"
+        "Maulbronn Monastery Complex"
         
     ]:
         row = df[df['name_en'] == name].reset_index(drop=True)
@@ -154,16 +151,17 @@ def journey_generator(df):
 
     lats = []; lons = []
     for name in [
-        "Works of Antoni Gaudí",
-        "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
         "Old Town of Segovia and its Aqueduct",
         "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
         "Historic City of Toledo",
         "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "Historic Centre of Cordoba",
         "Cathedral, Alcázar and Archivo de Indias in Seville",
+        "Historic Centre of Cordoba",
         "Alhambra, Generalife and Albayzín, Granada",
         "Historic Centre of Cordoba",
         "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "Works of Antoni Gaudí",
         "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
         "Historic Site of Lyon"
     ]:
