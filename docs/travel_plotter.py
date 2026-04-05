@@ -99,7 +99,7 @@ def journey_generator(df):
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
-    yield lats, lons, "lightgray", "(Possible) Wallonia"
+    yield lats, lons, "gray", "(Planned) Germany"
 
     lats = []; lons = []
     for name in [

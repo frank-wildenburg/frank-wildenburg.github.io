@@ -3,6 +3,7 @@
 
 title: Frank Wildenburg # Change this to your book title.
 author: Frank Wildenburg # Change this to your name (or your team/organization name).
+copyright: "2024-2026"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
