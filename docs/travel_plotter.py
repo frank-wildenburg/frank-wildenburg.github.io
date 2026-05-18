@@ -160,6 +160,8 @@ def journey_generator(df):
         "Historic Centre of Cordoba",
         "Alhambra, Generalife and Albayzín, Granada",
         "Historic Centre of Cordoba",
+        "Caliphate City of Medina Azahara",
+        "Historic Centre of Cordoba",
         "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
         "Works of Antoni Gaudí",
         "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
@@ -168,6 +170,6 @@ def journey_generator(df):
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
-    yield lats, lons, "gray", "(Planned) Spain 2026"
+    yield lats, lons, "aqua", "Spain 2026"
 
 
