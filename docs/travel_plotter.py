@@ -99,7 +99,7 @@ def journey_generator(df):
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
-    yield lats, lons, "gray", "(Planned) Germany"
+    yield lats, lons, "gray", "(Planned) Germany 2026"
 
     lats = []; lons = []
     for name in [
@@ -171,5 +171,21 @@ def journey_generator(df):
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
     yield lats, lons, "aqua", "Spain 2026"
+
+    lats = []; lons = []
+    for name in [
+        "Historic Centre of Florence",
+        "Medici Villas and Gardens in Tuscany",
+        "Piazza del Duomo, Pisa",
+        "Historic Centre of San Gimignano",
+        "Historic Centre of Siena",
+        "Val d'Orcia",
+        "Historic Centre of the City of Pienza",
+        "Historic Centre of Florence"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "gray", "(Planned) Tuscany 2026"
 
 
