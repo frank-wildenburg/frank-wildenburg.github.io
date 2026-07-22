@@ -186,6 +186,6 @@ def journey_generator(df):
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
-    yield lats, lons, "gray", "(Planned) Tuscany 2026"
+    yield lats, lons, "crimson", "Tuscany 2026"
 
 
