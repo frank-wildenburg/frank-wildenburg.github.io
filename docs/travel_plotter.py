@@ -88,6 +88,7 @@ def journey_generator(df):
 
     lats = []; lons = []
     for name in [
+        "Frontiers of the Roman Empire",
         "Messel Pit Fossil Site",
         "Mathildenhöhe Darmstadt",
         "Abbey and Altenmünster of Lorsch",
@@ -99,7 +100,7 @@ def journey_generator(df):
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
-    yield lats, lons, "gray", "(Planned) Germany 2026"
+    yield lats, lons, "lightpink", "Germany 2026"
 
     lats = []; lons = []
     for name in [
@@ -140,7 +141,6 @@ def journey_generator(df):
         "Roman Monuments, Cathedral of St Peter and Church of Our Lady in Trier",
         "Upper Middle Rhine Valley",
         "The Great Spa Towns of Europe",
-        "Frontiers of the Roman Empire",
         "Castles of Augustusburg and Falkenlust at Brühl",
         "Cologne Cathedral"
     ]:
