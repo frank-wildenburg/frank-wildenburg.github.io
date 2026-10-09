@@ -188,4 +188,134 @@ def journey_generator(df):
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
     yield lats, lons, "crimson", "Tuscany 2026"
 
+    lats = []; lons = []
+    for name in [
+        "Museumsinsel (Museum Island), Berlin",
+        "Muskauer Park / Park Mużakowski",
+        "Moravian Church Settlements",
+        "Naumburg Cathedral",
+        "Collegiate Church, Castle and Old Town of Quedlinburg",
+        "Garden Kingdom of Dessau-Wörlitz",
+        "Luther Memorials in Eisleben and Wittenberg",
+        "Museumsinsel (Museum Island), Berlin"
+        
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) East Germany"
+
+    lats = []; lons = []
+    for name in [
+        "St Mary's Cathedral and St Michael's Church at Hildesheim",
+        "Mines of Rammelsberg, Historic Town of Goslar and Upper Harz Water Management System",
+        "Fagus Factory in Alfeld",
+        "Carolingian Westwork and Civitas Corvey",
+        "Bergpark Wilhelmshöhe",
+        "Wartburg Castle"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Middle Germany"
+
+    lats = []; lons = []
+    for name in [
+        "The Climats, terroirs of Burgundy",
+        "From the Great Saltworks of Salins-les-Bains to the Royal Saltworks of Arc-et-Senans, the Production of Open-pan Salt",
+        "Fortifications of Vauban",
+        "The Climats, terroirs of Burgundy",
+        "Vézelay, Church and Hill",
+        "Cistercian Abbey of Fontenay",
+        "The Climats, terroirs of Burgundy"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Burgundy"
+
+    lats = []; lons = []
+    for name in [
+        "Church and Dominican Convent of Santa Maria delle Grazie with “The Last Supper” by Leonardo da Vinci",
+        "Ivrea, industrial city of the 20th century",
+        "Residences of the Royal House of Savoy",
+        "Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato",
+        "Genoa: <i>Le Strade Nuove</i> and the system of the<i> Palazzi dei Rolli</i>",
+        "Portovenere, Cinque Terre, and the Islands (Palmaria, Tino and Tinetto)"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) North-Eastern Italy"
+
+    lats = []; lons = []
+    for name in [
+        "Rhaetian Railway in the Albula / Bernina Landscapes",
+        "Rock Drawings in Valcamonica",
+        "Longobards in Italy. Places of the Power (568-774 A.D.)",
+        "Venetian Works of Defence between the 16th and 17th Centuries: <em>Stato da Terra</em> – Western <em>Stato da Mar</em>",
+        "Crespi d'Adda",
+        "Monte San Giorgio",
+        "<I>Sacri Monti</I> of Piedmont and Lombardy"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Northern Italy"
+
+    lats = []; lons = []
+    for name in [
+        "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+        "Assisi, the Basilica of San Francesco and Other Franciscan Sites",
+        "Historic Centre of Urbino",
+        "San Marino Historic Centre and Mount Titano",
+        "The system of Italian-style <em>condominio</em> theatres of the 18th and 19th centuries in Central Italy",
+        "Early Christian Monuments of Ravenna"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Central Italy"
+
+    lats = []; lons = []
+    for name in [
+        "Nice, Winter Resort Town of the Riviera",
+        "Decorated Cave of Pont d’Arc, known as Grotte Chauvet-Pont d’Arc, Ardèche",
+        "The Causses and the Cévennes, Mediterranean agro-pastoral Cultural Landscape",
+        "Chaîne des Puys - Limagne fault tectonic arena"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Southern France"
+
+    lats = []; lons = []
+    for name in [
+        "Water Management System of Augsburg",
+        "Caves and Ice Age Art in the Swabian Jura",
+        "Monastic Island of Reichenau",
+        "Prehistoric Pile Dwellings around the Alps",
+        "Abbey of St Gall"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Southern Germany"
+
+    lats = []; lons = []
+    for name in [
+        "Würzburg Residence with the Court Gardens and Residence Square",
+        "Town of Bamberg",
+        "Margravial Opera House Bayreuth",
+        "Old town of Regensburg with Stadtamhof",
+        "Pilgrimage Church of Wies",
+        "The Palaces of King Ludwig II of Bavaria: Neuschwanstein, Linderhof, Schachen and Herrenchiemsee"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Mid-Southern Germany"
+
+
+
 
