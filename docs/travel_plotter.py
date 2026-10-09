@@ -316,6 +316,49 @@ def journey_generator(df):
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
     yield lats, lons, "lightgrey", "(Possible) Mid-Southern Germany"
 
+    lats = []; lons = []
+    for name in [
+        "The Porticoes of Bologna",
+        "Ferrara, City of the Renaissance, and its Po Delta",
+        "Mantua and Sabbioneta",
+        "Evaporitic Karst and Caves of Northern Apennines",
+        "Cathedral, Torre Civica and Piazza Grande, Modena",
+        "The Porticoes of Bologna"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Emilia-Romagna"
+
+    lats = []; lons = []
+    for name in [
+        "The Dolomites",
+        "Padua’s fourteenth-century fresco cycles",
+        "Botanical Garden (Orto Botanico), Padua",
+        "Le Colline del Prosecco di Conegliano e Valdobbiadene",
+        "Archaeological Area and the Patriarchal Basilica of Aquileia",
+        "Venice and its Lagoon"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "(Possible) Emilia-Romagna"
+
+    lats = []; lons = []
+    for name in [
+        "Bourges Cathedral",
+        "Abbey Church of Saint-Savin sur Gartempe",
+        "The Loire Valley between Sully-sur-Loire and Chalonnes",
+        "Megaliths of Carnac and of the shores of Morbihan",
+        "Mont-Saint-Michel and its Bay",
+        "Beaches of the D-Day Landings, Normandy, 1944",
+        "Le Havre, the City Rebuilt by Auguste Perret"
+    ]:
+        row = df[df['name_en'] == name].reset_index(drop=True)
+        assert len(row) == 1, f"length of row is {len(row)}"
+        lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
+    yield lats, lons, "lightgrey", "Western France"
+
 
 
 
