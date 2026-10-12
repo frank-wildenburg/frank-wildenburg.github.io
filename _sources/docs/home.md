@@ -7,6 +7,7 @@ Hi! I am currently a full-time teacher (docent-4) at the University of Amsterdam
 ## Updates
 
 - I visited the [_AI and Law Summer School_](https://www.eui.eu/apply?id=ai-and-law-school) at the European University Institute
+- I obtained my University Teaching Qualification
 - I started a [_Gödel, Escher, Bach_ book club](./geb.ipynb)!
 - I gave a guest lecture for the honours module _AIducation - The Future of Education?_ on the usage of (generative) AI in education and the bachelor's programme in AI. 
 - I wrote [an opinion piece on the values of AI-education](https://www.folia.nl/nl/opinie/166907/huidig-ai-onderwijs-is-te-eenzijdig-gericht-op-technologie) for _Folia_. You can also find an extended version of this essay on this website.
