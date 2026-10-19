@@ -79,12 +79,13 @@ def journey_generator(df):
         "Neolithic Flint Mines at Spiennes (Mons)",
         "Major Mining Sites of Wallonia",
         "Nord-Pas de Calais Mining Basin",
+        "Fortifications of Vauban",
         "Notre-Dame Cathedral in Tournai"
     ]:
         row = df[df['name_en'] == name].reset_index(drop=True)
         assert len(row) == 1, f"length of row is {len(row)}"
         lats.append(row['latitude'][0]); lons.append(row['longitude'][0])
-    yield lats, lons, "lightgray", "(Possible) Wallonia"
+    yield lats, lons, "cadetblue", "(Possible) Wallonia"
 
     lats = []; lons = []
     for name in [
@@ -223,7 +224,6 @@ def journey_generator(df):
     for name in [
         "The Climats, terroirs of Burgundy",
         "From the Great Saltworks of Salins-les-Bains to the Royal Saltworks of Arc-et-Senans, the Production of Open-pan Salt",
-        "Fortifications of Vauban",
         "The Climats, terroirs of Burgundy",
         "Vézelay, Church and Hill",
         "Cistercian Abbey of Fontenay",
